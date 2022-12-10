@@ -17,7 +17,7 @@ namespace CancellationWithExceptionFilter
             {
                 _logger.LogInformation("Request Cancelled");
                 context.ExceptionHandled = true;
-                context.Result = new StatusCodeResult(499);
+                context.Result = new StatusCodeResult(400);
             }
         }
     }
